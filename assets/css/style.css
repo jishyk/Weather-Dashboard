@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    background: #e4f1fe;
+    color: #333;
 }
 
 header, main {
     text-align: center;
+    margin: 20px;
 }
 
 #search-section {
     margin-bottom: 20px;
 }
+

@@ -1,23 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forecast Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1>5-Day Weather Forecast</h1>
     </header>
     <main>
-        <section id="search-section">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="search-button">Search</button>
-        </section>
-        <section id="current-weather"></section>
-        <section id="forecast"></section>
-        <section id="search-history"></section>
+        <div class="search-container">
+            <label for="cityInput">City:</label>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getInfo()">Search</button>
+        </div>
+        <h2 id="cityName">--City--</h2>
+        
+        <div class="weather-container">
+            <div class="column">
+                <p class="weather" id="day1"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img1" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day1Min">loading</p>
+                <p class="temperature" id="day1Temper">loading</p>
+                <p class="maxVal" id="day1Max">loading</p>
+                <p class="humid" id="day1Hum">loading</p>
+                <p class="wind" id="day1Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day2"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day3"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day4"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day5"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day6"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
+
+            <div class="column">
+                <p class="weather" id="day7"></p>
+                <div class="image">
+                    <img src="placeholder.png" class="imgclass" id="img2" alt="Weather Icon">
+                </div>
+                <p class="minVal" id="day2Min">loading</p>
+                <p class="temperature" id="day2Temper">loading</p>
+                <p class="maxVal" id="day2Max">loading</p>
+                <p class="humid" id="day2Hum">loading</p>
+                <p class="wind" id="day2Win">loading</p>
+            </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
